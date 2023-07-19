@@ -20,7 +20,6 @@ function App() {
    
    try {
       const {data} = await axios(URL + `?email=${email}&password=${password}`)
-      console.log(data)
       const {access} = data;
       setAccess(data)
       access && navigate('/home')
