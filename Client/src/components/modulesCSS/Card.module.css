@@ -1,0 +1,115 @@
+.carta{
+    background-image: url(../../../assets/fondo-card.png);
+    background-size:cover;
+    background-position: center;
+    height:460px;
+    width: 300px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-template-rows: 5% 10% 50% 10% 25%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    
+}
+
+.carta:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.01);
+    
+
+}
+
+.imagen{
+    grid-area: 3/2/4/5;
+    border-radius: 100%;
+    height: 90%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.imagenContainer{
+    grid-area: 3/2/4/5;
+    height: 100%;
+    width: auto;
+}
+
+
+
+.carta img:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    
+    
+}
+.id{
+    grid-area: 2/2/2/5 ;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+
+}
+.name{
+    grid-area: 4/2/4/5 ;
+    align-self: end;
+    justify-self: center;
+    
+    
+}
+.status{
+    
+    width: 60%;
+    grid-area: 1/1/2/3 ;
+    margin: auto;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 30px;
+    padding: 2%;
+
+}
+.species{
+    
+    grid-area: 4/4/5/5;
+    align-self: center;
+    justify-self: center;
+    border: 3px solid;
+    border-radius: 30px;
+    padding: 10%;
+    
+}
+
+.gender{
+    grid-area: 4/2/5/3;
+    border: 3px solid;
+    border-radius: 30px;
+    padding: 10%;
+    justify-self: center;
+    align-self: center;
+}
+
+.origin{
+    grid-area: 5/1/6/6;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.close{
+    justify-self: end;
+    align-self: start;
+    grid-area: 1/5/2/6;
+    border-top-right-radius: 50%;
+}
+
+.fav{
+    height: 100%;
+    grid-area: 1/1/2/2;
+    border: 0px;
+    background-color: transparent;
+}
