@@ -1,4 +1,4 @@
-myFavorites = [];
+var myFavorites = [];
 
 function postFav(req, res) {
   myFavorites.push(req.body);

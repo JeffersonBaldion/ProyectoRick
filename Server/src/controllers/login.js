@@ -1,7 +1,6 @@
 const allowedUser = require('../utils/allowedUser')
 
 function login (req,res){
-
     const {email, password} = req.query;
     let access = false;
 
@@ -10,8 +9,8 @@ function login (req,res){
             access = true
         }
     });
-
-    return res.json ({access})
+    
+    return res.status(200).json({access})
 }
 
-module.exports = {login}
+module.exports = login
