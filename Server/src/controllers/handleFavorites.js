@@ -6,7 +6,7 @@ function postFav(req, res) {
 }
 
 function deleteFav(req, res) {
-  const { id } = req.params;
+  const {id} = req.params;
   const noDelete = myFavorites.filter((pj) => pj.id !== Number(id));
   myFavorites = noDelete;
 
@@ -18,6 +18,7 @@ function getFav(req, res) {
 }
 
 module.exports = {
+  myFavorites,
   postFav,
   deleteFav,
   getFav,
