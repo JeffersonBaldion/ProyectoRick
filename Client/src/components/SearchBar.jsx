@@ -13,15 +13,18 @@ export default function SearchBar(props) {
    return (
       <div className={Styles.container}>
          <input 
+         
          className={Styles.input}
          type='text' 
-         placeholder="Busca un personaje"
+         placeholder="Type any ID number"
          onChange={handleChange}
          value={id}
          />
          
-
-         <button className={Styles.button} onClick={() => {props.onSearch(id)}}>+</button>
+         
+         <button className={Styles.button} onClick={() => {props.onSearch(id)}}>
+         <ion-icon name="search-outline"></ion-icon>
+         </button>
       </div>
    );
 }

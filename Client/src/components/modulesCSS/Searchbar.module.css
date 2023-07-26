@@ -1,22 +1,50 @@
 .container{ 
-    display: flex;
-    justify-content: space-between
-}
-
-.input{
-    font: 15px/24px "Lato", Arial, sans-serif;
-    color: #333;
-    width: 80%;
-    box-sizing: border-box;
-    letter-spacing: 1px;
     
-
+    top: 50%;
+    left: 50%;
+    background: #780088;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
 }
-.button{
 
-    width: 20%;
-    border-bottom-right-radius: 30px;
-    height: 30px;
+.container:hover > .input{
+    width: 200px;
+    padding: 0 6px;
+}
+.container:hover > .button{
+
+    background: white;
+    color : #2f3640;
+}
+
+.button {
+    color: #9B48CF;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #410055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.input {
+    letter-spacing: 2px;
+    font-family: Bahnschrift;
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: #220136;
+    font-size: 18px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
 }
 
 
