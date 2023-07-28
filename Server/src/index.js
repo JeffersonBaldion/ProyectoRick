@@ -4,7 +4,7 @@ const PORT = 3001
 
 
 server.listen(PORT, ()=>{
-    conn.sync({force: false})
+    conn.sync({force: true})
     console.log(`Server running on port ${PORT}`)
 })
 
