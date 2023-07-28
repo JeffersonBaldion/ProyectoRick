@@ -30,6 +30,7 @@ export default function Nav(props){
             
 
         })} to="/about">ABOUT</NavLink>
+
         <NavLink  style={
             ({isActive})=>({
                 
@@ -50,6 +51,7 @@ export default function Nav(props){
             
 
         })} to="/home">HOME</NavLink>
+        
         <NavLink style={
             ({isActive})=>({
 
